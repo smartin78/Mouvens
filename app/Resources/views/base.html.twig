@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}Mouvens{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}Mouvens{% endblock %}">
+    <meta name="robots" content="{% block robots %}index,follow{% endblock %}">
+
+    <title>{% block title %}Mouvens{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+    {% block stylesheets %}{% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- Header Barre -->
+<div class="container">
+    <div class="header-top">
+        <div class="menu-top">
+            <ul>
+                <li>Mon Compte</li>
+                <li>Mon Panier</li>
+                <li>S'Inscrire</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-logo col-sm-4 col-xs-12">
+        <img src="{{ asset('img/logo.jpg') }}" alt="Mouvens">
+    </div>
+    <div class="header-search pull-right col-sm-7 col-xs-12">
+        <form action="#" method="post">
+            <input name="Search" placeholder="Recherche ..." type="search">
+            <button type="submit" class="btn btn-default" aria-label="Left Align">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+</div>
+<!-- Fin Header Barre -->
+
+{% block body %}{% endblock %}
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright &copy; Mouvens {{ "now"|date("Y") }} - Tous droits reservés</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% block javascripts %}{% endblock %}
+
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<!-- NO JavaScript -->
+<noscript><p>Veuillez activer JavaScript</p></noscript>
+</body>
 </html>
