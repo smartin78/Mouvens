@@ -1,0 +1,169 @@
+/******************************************************************************************************
+**************************************** Style general ************************************************
+******************************************************************************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #48433B;
+}
+
+a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-weight: 400;
+}
+
+/******************************************************************************************************
+******************************************* Header ****************************************************
+******************************************************************************************************/
+
+.header-top {
+    padding: 0 15px;
+    color: #8e8e8e;
+    height: 50px;
+}
+
+.header-top ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-top ul li {
+    margin: 15px 6px;
+    display: inline-block;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.header-search {
+    height: 100px;
+    float: left;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.header-search form {
+    position: relative;
+}
+
+.header-search input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    color: #999;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: none;
+    -webkit-appearance: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+
+.header-search .btn-default {
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 48px;
+    height: 38px;
+    outline: none;
+    box-shadow: none;
+    background: #FF7F00;
+    padding: 0;
+    border-radius: inherit;
+    -webkit-appearance: none;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+}
+
+.header-search i.fa {
+    font-size: 1em;
+    color: #fff;
+    padding: 3px;
+}
+
+.banner {
+    background: url('../img/banner.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 400px;
+    padding: 100px 0 0 0;
+}
+
+.banner h1 {
+    color: #0A51A1;
+    font-size: 45px;
+}
+
+.banner p {
+    color: #0A51A1;
+    margin: 10px 0 30px 0;
+    font-size: 18px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    background-color: #FF7F00;
+    padding: 10px 20px;
+}
+
+.banner a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+/******************************************************************************************************
+******************************************* Footer ****************************************************
+******************************************************************************************************/
+
+footer {
+    position: relative;
+    top: 100px;
+    background-color: #232E40;
+    color: #8e8e8e;
+}
+
+footer p {
+    padding: 25px 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+/******************************************************************************************************
+******************************************* Media Queries *********************************************
+******************************************************************************************************/
+
+/* Styles pour tablettes et smartphones */
+@media all and (max-width : 992px){
+    .banner {
+        min-height: 360px;
+    }
+}
+
+/* Styles pour tablettes */
+@media all and (min-width : 768px) and (max-width : 992px){
+    .banner {
+        min-height: 300px;
+    }
+}
+
+/* Styles pour smartphones */
+@media all and (max-width : 768px) {
+    .banner {
+        min-height: 240px;
+    }
+}
