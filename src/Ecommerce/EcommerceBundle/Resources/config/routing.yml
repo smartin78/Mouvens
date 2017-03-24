@@ -5,3 +5,7 @@ ecommerce_homepage:
 categorie:
     path:     /categorie
     defaults: { _controller: EcommerceBundle:Categorie:index }
+    
+produit:
+    path:     /categorie/produit
+    defaults: { _controller: EcommerceBundle:Produit:index }
