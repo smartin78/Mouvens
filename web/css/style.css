@@ -5,10 +5,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 1em;
     color: #48433B;
+}
+
+h2 {
+    font-size: 14px;
 }
 
 a {
@@ -141,6 +144,62 @@ footer p {
     padding: 25px 0;
     line-height: 40px;
     text-align: center;
+}
+
+/******************************************************************************************************
+******************************************* Accueil ****************************************************
+******************************************************************************************************/
+
+.titreBlocAvant h2{
+    margin: 10px 0 0 0;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FF7F00;
+    text-transform: uppercase;
+}
+
+.bodyBlocAvant {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 2px solid #FF7F00;
+}
+
+.bodyBlocAvant i.fa {
+    float: left;
+    margin-right: 10px;
+    color: #0A51A1;
+}
+
+.lienBlocAvant {
+    text-align: center;
+    padding: 10px;
+    background: #e1e1e1;
+    width: 100%;
+}
+.bodyBlocAvant a {
+    color: #8e8e8e;
+    text-decoration: none;
+    display: block;
+}
+
+/******************************************************************************************************
+******************************************* Categorie ****************************************************
+******************************************************************************************************/
+
+.titreColonneG p {
+    margin: 10px 0 0 0;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FF7F00;
+    text-transform: uppercase;
+}
+
+.bodyColonneG {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 2px solid #FF7F00;
 }
 
 /******************************************************************************************************
