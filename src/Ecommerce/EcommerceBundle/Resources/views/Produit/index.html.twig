@@ -1,0 +1,37 @@
+{% extends"::base.html.twig" %}
+{% block body %}
+    {% include '::modules/navigation.html.twig' %}
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9">
+
+                <div class="col-md-12">
+                    <div class="titreProduit">
+                        <h1>Produit 1</h1>
+                    </div>
+                    <div class="bodyProduit">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat temporibus quo libero iusto laudantium ut quia. Inventore delectus reiciendis minus nam vel maxime. Voluptates exercitationem ex praesentium vel est nostrum.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            <div class="col-md-3">
+                <div class="bodyColonneProduit">
+                    <div class="prixProduit">
+                        <p class="prixProduitHT">15,50€ HT</p>
+                        <p class="prixProduitTTC">23,80€ TTC</p>
+                    </div>
+                    <div class="lienAchatProduit">
+                        <a href="#" class="hvr-icon-fade">Ajouter au panier</a>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+{% endblock %}
