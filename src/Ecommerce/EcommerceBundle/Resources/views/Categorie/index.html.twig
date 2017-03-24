@@ -1,0 +1,26 @@
+{% extends"::base.html.twig" %}
+{% block body %}
+    {% include '::modules/navigation.html.twig' %}
+    
+    <div class="container">
+        <div class="row">
+
+            {% include '::modules/colonne-g.html.twig' %}
+
+            <div class="col-md-9">
+                <div class="titreBlocAvant">
+                    <h2>Comptabilité</h2>
+                </div>
+                <div class="bodyBlocAvant">
+                    <i class="fa fa-calculator fa-5x"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat temporibus quo libero iusto laudantium ut quia. Inventore delectus reiciendis minus nam vel maxime. Voluptates exercitationem ex praesentium vel est nostrum.</p>
+                    <div class="lienBlocAvant hvr-overline-from-center">
+                        <a href="#" class="">Voir plus</a>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+{% endblock %}
