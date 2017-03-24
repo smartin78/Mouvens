@@ -10,6 +10,10 @@ body {
     color: #48433B;
 }
 
+h1 {
+    font-size: 18px;
+}
+
 h2 {
     font-size: 14px;
 }
@@ -147,7 +151,7 @@ footer p {
 }
 
 /******************************************************************************************************
-******************************************* Accueil ****************************************************
+******************************************* Accueil ***************************************************
 ******************************************************************************************************/
 
 .titreBlocAvant h2{
@@ -184,7 +188,7 @@ footer p {
 }
 
 /******************************************************************************************************
-******************************************* Categorie ****************************************************
+******************************************* Categorie *************************************************
 ******************************************************************************************************/
 
 .titreColonneG p {
@@ -200,6 +204,110 @@ footer p {
     margin: 0 0 10px 0;
     padding: 10px;
     border: 2px solid #FF7F00;
+}
+
+.titreCategorie h2 {
+    margin: 10px 0 0 0;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FF7F00;
+    text-transform: uppercase;
+}
+
+.bodyCategorie {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 2px solid #FF7F00;
+}
+
+.prixCategorie {
+    text-align: right;
+    padding: 6px 10px 2px 0;
+    border-right: 8px solid #8e8e8e;
+    background-color: #eee;
+}
+
+.prixCategorieHT {
+    font-size: 12px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.prixCategorieTTC {
+    font-size: 11px;
+    color: burlywood;
+}
+
+.lienCategorie {
+    padding: 10px 0;
+}
+
+.lienDetailCategorie, .lienAchatCategorie {
+    text-align: center;
+}
+
+.lienDetailCategorie a, .lienAchatCategorie a {
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+.lienDetailCategorie a {
+    background-color: cornflowerblue;
+}
+
+.lienAchatCategorie a {
+    background-color: coral;
+}
+
+/******************************************************************************************************
+******************************************* Produit ***************************************************
+******************************************************************************************************/
+
+.titreProduit h1 {
+    margin: 10px 0 0 0;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bodyProduit {
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+.bodyColonneProduit {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border: 2px solid #FF7F00;
+}
+
+.lienAchatProduit {
+    text-align: center;
+}
+
+.prixProduit {
+    text-align: right;
+    padding: 6px 10px 2px 0;
+    text-align: center;
+}
+
+.prixProduitHT {
+    font-size: 14px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.prixProduitTTC {
+    font-size: 12px;
+    color: burlywood;
+}
+
+.lienAchatProduit a {
+    width: 100%;
+    padding: 6px;
+    background-color: beige;
+    text-decoration: none;
 }
 
 /******************************************************************************************************
